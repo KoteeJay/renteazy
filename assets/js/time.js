@@ -56,6 +56,7 @@ const phone = document.getElementById('phone')
 const email = document.getElementById('email')
 let namerror = document.getElementById('namerror')
 const join = document.getElementById('join')
+const form = document.getElementById('form')
 
 
 join.addEventListener("click", (e) => {
@@ -74,5 +75,6 @@ join.addEventListener("click", (e) => {
         namerror.innerText = "Email must include @"
     } else {
         alert('Thanks for joining our waitlist')
+        form.reset()
     }
 })
