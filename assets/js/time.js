@@ -28,3 +28,51 @@ var x = setInterval(function() {
         document.getElementById("clear").innerHTML = "LAUNCH";
     }
 }, 1000);
+
+
+const close = document.getElementById('x')
+const modal = document.getElementById('modal')
+const open = document.getElementById('open')
+const joined = document.getElementById('joined')
+
+
+
+open.addEventListener('click', () => {
+    modal.style.display = "block"
+})
+
+
+close.addEventListener('click', () => {
+    modal.style.display = "none"
+
+})
+
+// function waitlist() {
+//     alert('Thanks for joining our waitlist')
+// }
+
+const name = document.getElementById('name')
+const phone = document.getElementById('phone')
+const email = document.getElementById('email')
+let namerror = document.getElementById('namerror')
+const join = document.getElementById('join')
+
+
+join.addEventListener("click", (e) => {
+    e.preventDefault()
+
+    if (name.value == "") {
+        console.log('name field is empty')
+        namerror.innerText = "Please enter your name"
+    } else if (name.value <= '2') {
+        namerror.innerText = "Name is too short"
+    } else if (phone.value == "") {
+        namerror.innerText = "Please enter your phone number"
+    } else if (email.value == "") {
+        namerror.innerText = "Enter your email address"
+    } else if (email.value.includes('@') == false) {
+        namerror.innerText = "Email must include @"
+    } else {
+        alert('Thanks for joining our waitlist')
+    }
+})

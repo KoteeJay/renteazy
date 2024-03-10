@@ -350,12 +350,19 @@ h6 {
     font-size: 48px;
     font-weight: 700;
     color: #fff;
+    position: relative;
 }
 
-#hero h2 {
+#hero p {
+    margin: 0;
     color: #fff;
-    margin: 10px 0 0 0;
-    font-size: 24px;
+    position: relative;
+}
+
+#hero a {
+    margin: 0;
+    color: #fff;
+    position: relative;
 }
 
 #hero .btn-get-started {
@@ -371,6 +378,7 @@ h6 {
     color: #fff;
     background: #002244;
     border: 2px solid #002244;
+    cursor: pointer;
 }
 
 #hero .btn-get-started:hover {
@@ -382,6 +390,7 @@ h6 {
     #hero {
         text-align: center;
         padding-top: 58px;
+        height: 100vh;
     }
     #hero h1 {
         font-size: 28px;
@@ -403,6 +412,81 @@ h6 {
     color: #fff;
 }
 
-.time h2 {
-    margin-right: 30px;
+.mod {
+    background-color: #e03a3c;
+    position: absolute;
+    z-index: 1000;
+}
+
+#modal {
+    display: none;
+}
+
+.myModal {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    position: relative;
+    position: absolute;
+    top: 100px;
+    width: 50vw;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0, .2);
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.myModal h2 {
+    color: #002244;
+    font-weight: 400;
+}
+
+.myModal input {
+    margin: 15px;
+    border-radius: 8px;
+    width: 80%;
+    border: solid #002244 1px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.myModal .btn {
+    margin: 30px auto;
+    background: #002244;
+    color: #fff;
+    border-radius: 4px;
+    width: 70%;
+    height: 40px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.x {
+    color: #002244;
+    font-weight: 600;
+    font-weight: 20px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.w {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .x {
+        display: none;
+    }
+    .myModal {
+        width: 80vw;
+        left: 40px;
+    }
+}
+
+.error {
+    color: red;
 }
