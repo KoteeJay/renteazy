@@ -19,7 +19,7 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
 
-    <!-- Template Main CSS File -->
+    <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
 
@@ -31,7 +31,7 @@
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">Find-A-Home<span>.</span>Com</a></h1>
+            <h1 class="logo me-auto"><a href="index.html">Rent<span>E</span>asy</a></h1>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
@@ -49,47 +49,75 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
-        <div class="container text-light ">
+        <div class="text-light ">
+            <div class="slider">
+                <figure>
+                    <img src="assets/img/hero-bg.jpg" alt="">
+                    <img src="assets/img/hero-bg2.jpg" alt="">
+                    <img src="assets/img/hero-bg3.jpg" alt="">
+                    <img src="assets/img/hero-bg4.jpg" alt="">
+                    <img src="assets/img/hero-bg5.jpg" alt="">
 
-            <div class="row">
-                <div class="col-xl-6 time ">
-                    <h1>COMING SOON</h1>
-                    <p><span id="dd"></span>:<span id="hh"></span> :<span id="mm"></span> :<span id="ss"></span></p>
+                </figure>
+                <div class="row display">
+                    <div class="col-xl-6 time pad text-center">
+                        <h1>COMING SOON</h1>
+                        <!-- <p><span id="dd"></span>:<span id="hh"></span> :<span id="mm"></span> :<span id="ss"></span></p> -->
 
-                    <a id="open" class="btn-get-started scrollto">Join Our Waitlist</a>
+                        <div class="launch-time">
+                            <div>
+                                <p id="dd">00</p>
+                                <span>Days</span>
+                            </div>
+                            <div>
+                                <p id="hh">00</p>
+                                <span>Hours</span>
+                            </div>
+                            <div>
+                                <p id="mm">00</p>
+                                <span>Minutes</span>
+                            </div>
+                            <div>
+                                <p id="ss">00</p>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
 
+
+
+                        <a id="open" class="btn-get-started scrollto">Join Our Waitlist</a>
+
+                    </div>
                 </div>
             </div>
 
 
 
+
         </div>
-
-
 
     </section>
     <!-- End Hero -->
 
 
-    <section id="modal">
-        <div class="container">
-            <form action="" id="form">
-                <div class="myModal text-center">
-                    <h3 class="x" id="x">X</h3>
-                    <h2>Join Our Waitlist</h2>
+    <section id="modal" class="modal">
 
-                    <div class="error" id="namerror"></div>
-                    <input type="text" placeholder="Enter Name" id="name">
+        <form action="" id="form">
+            <div class="myModal text-center">
+                <h3 class="x" id="x">X</h3>
+                <h2>Join Our Waitlist</h2>
 
-                    <br>
-                    <input type="tel" placeholder="Enter Phone Number" id="phone"> <br>
-                    <input type="email" placeholder="Enter Email" id="email"><br>
+                <div class="error" id="namerror"></div>
+                <input type="text" placeholder="Enter Name" id="name">
 
-                    <button class="btn" id="join">Join Now</button>
-            </form>
+                <br>
+                <input type="tel" placeholder="Enter Phone Number" id="phone"> <br>
+                <input type="email" placeholder="Enter Email" id="email"><br>
 
-            </div>
-        </div>
+                <button class="btn" id="join">Join Now</button>
+        </form>
+
+
     </section>
 
     <script src="assets/vendor/aos/aos.js"></script>
